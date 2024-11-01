@@ -1,0 +1,60 @@
+/* The slider */
+
+.ydn-switch-wrapper {
+	position: relative;
+	height: 34px;
+	width: 54px;
+}
+
+.ydn-switch-wrapper input[type="checkbox"] {
+	display: none;
+}
+
+.ydn-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: -7px;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	transform: scale(0.8, 0.8);
+}
+
+.ydn-slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .ydn-slider {
+	background-color: #2196F3;
+}
+
+input:focus + .ydn-slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .ydn-slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.ydn-slider.ydn-round {
+	border-radius: 34px;
+}
+
+.ydn-slider.ydn-round:before {
+	border-radius: 50%;
+}
+/*Checkbox slider end*/

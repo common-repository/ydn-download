@@ -1,0 +1,140 @@
+/* ----------------------------------------------------------------------------------------------------
+Super Form Reset
+----------------------------------------------------------------------------------------------------*/
+
+.ydn-form-wrapper input,
+.ydn-form-wrapper label,
+.ydn-form-wrapper select,
+.ydn-form-wrapper button,
+.ydn-form-wrapper textarea {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	background: none;
+	line-height: 1;
+	max-width: 100% !important;
+	/* Browsers have different default form fonts */
+	font-size: 13px;
+	font-family: Arial;
+}
+
+/* Remove the stupid outer glow in Webkit */
+.ydn-form-wrapper input:focus {
+	outline: 0;
+}
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+
+/* All of our custom controls should be what we expect them to be */
+.ydn-form-wrapper input,
+.ydn-form-wrapper textarea {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/* These elements are usually rendered a certain way by the browser */
+.ydn-form-wrapper button,
+.ydn-form-wrapper input[type=reset],
+.ydn-form-wrapper input[type=button],
+.ydn-form-wrapper input[type=submit],
+.ydn-form-wrapper input[type=checkbox],
+.ydn-form-wrapper input[type=radio],
+.ydn-form-wrapper select {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Button Controls
+-----------------------------------------------*/
+
+.ydn-form-wrapper input[type=checkbox],
+.ydn-form-wrapper input[type=radio] {
+	width: 13px;
+	height: 13px;
+}
+
+/* Search Input
+-----------------------------------------------*/
+
+/* Make webkit render the search input like a normal text field */
+.ydn-form-wrapper input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+}
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+.ydn-form-wrapper ::-webkit-search-decoration {
+	display: none;
+}
+
+/* Buttons
+-----------------------------------------------*/
+
+.ydn-form-wrapper button,
+.ydn-form-wrapper input[type="reset"],
+.ydn-form-wrapper input[type="button"],
+.ydn-form-wrapper input[type="submit"] {
+	/* Fix IE7 display bug */
+	overflow: visible;
+	width: auto;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+.ydn-form-wrapper ::-webkit-file-upload-button {
+	padding: 0;
+	border: 0;
+	background: none;
+}
+
+/* Textarea
+-----------------------------------------------*/
+
+.ydn-form-wrapper textarea {
+	/* Move the label to the top */
+	vertical-align: top;
+
+	/* Turn off scroll bars in IE unless needed */
+	overflow: auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+
+.ydn-form-wrapper select[multiple] {
+	/* Move the label to the top */
+	vertical-align: top;
+}
+
+/*Our reset styles*/
+.ydn-form-wrapper input[type="text"],
+.ydn-form-wrapper input[type="number"],
+.ydn-form-wrapper input[type="password"],
+.ydn-form-wrapper input[type="email"],
+.ydn-form-wrapper input[type="submit"],
+.ydn-form-wrapper input[type="button"] {
+	max-width: 100% !important;
+	padding: 10px !important;
+	box-sizing: border-box;
+	font-size: 14px !important;
+	box-shadow: none !important;
+	margin: 5px auto !important;
+	display: inline-block !important;
+	font-weight: bold !important;
+	background-image: none !important;
+}
+
+.ydn-form-wrapper input[type="submit"],
+.ydn-form-wrapper input[type="button"] {
+	line-height: 0.4 !important;
+	font-size: 18px !important;
+}
+
+.ydn-js-hide {
+	display: none;
+}

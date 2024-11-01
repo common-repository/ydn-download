@@ -1,0 +1,360 @@
+.ydn-download-details-wrapper {
+    margin-top: 25px;
+}
+
+.ydn-delete-checkbox {
+	margin-left: 8px !important;
+}
+
+.ydn-hidden-table-wrapper #bulk {
+    width: 20px !important;
+}
+
+.ydn-hidden-table-wrapper {
+    padding-right: 20px !important;
+}
+
+.ydn-hide-content, .ydn-hide {display: none}
+
+/*Checkbox slider start*/
+/* The switch - the box around the slider */
+.ydn-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.ydn-switch input {display:none;}
+
+/* The slider */
+.ydn-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    transform: scale(0.8, 0.8);
+}
+
+.ydn-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .ydn-slider {
+    background-color: #2196F3;
+}
+
+input:focus + .ydn-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .ydn-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.ydn-slider.ydn-round {
+    border-radius: 34px;
+}
+
+.ydn-slider.ydn-round:before {
+    border-radius: 50%;
+}
+
+/*Copy to clipboard*/
+.ydn-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.ydn-tooltip .ydn-tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.ydn-tooltip .ydn-tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.ydn-tooltip:hover .ydn-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Copy to clipboard*/
+
+.ydn-scroll-type-wrapper {
+    position: relative;
+    width: 250px;
+    height: 180px;
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 17px;
+    background-color: #DEDEDE;
+    background-size: 100%;
+    transition: all .1s ease-in-out;
+}
+
+.ydn-scroll-type-wrapper:hover {
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+}
+
+.ydn-scroll-type-wrapper:hover .ydn-type-view-footer {
+    background-color: #DEDEDE;
+    transition-duration: 0.5s;
+}
+
+.ydn-icon-title {
+    display: inline-block;
+    margin-top: 13px;
+    margin-left: 9px;
+}
+
+.ydn-type-view-footer {
+    background-color: #F1F1F1;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    bottom: 0px;
+}
+
+.ydn-type-div {
+    width: 248px;
+    height: 127px;
+}
+
+.ydn-button-type {
+    background-image: url("../../img/downloadButton.png");
+    background-size: 100% 100%;
+}
+
+.ydn-link-type {
+    background-image: url("../../img/downloadLink.png");
+    background-size: 100% 100%;
+}
+
+.ydn-subscription-type {
+    background-image: url("../../img/subscription.png");
+    background-size: 100% 100%;
+}
+
+.ydn-image-type {
+    background-image: url("../../img/downloadImage.png");
+    background-size: 100% 100%;
+}
+
+/*more plugins section*/
+
+
+#ycd-plugins-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.plugin-icon {
+    top: 0px !important;
+    left: 10px !important;
+}
+
+.plugin-card .desc  {
+    margin-right: 0px;
+}
+
+.plugin-card-top {
+    padding-top: 0px !important;
+}
+
+.plugin-card .compatibility-compatible:before {
+    content: "\f147" !important;
+}
+
+#ycd-plugins-wrapper .column-compatibility {
+    width: 100%;
+    text-align: inherit;
+}
+
+#ycd-plugins-wrapper .plugin-card {
+    cursor: pointer;
+}
+
+#plugin-icon-contact-form {
+    width:128px;
+    height:128px;
+    background-image: url(//ps.w.org/contact-form-master/assets/icon-128x128.png?rev=1293306);
+    background-size:128px 128px;
+}
+
+#plugin-icon-countdown {
+    width:128px;
+    height:128px;
+    background-image: url(https://ps.w.org/countdown-builder/assets/icon-128x128.png?rev=1696507);
+    background-size:128px 128px;
+}
+
+#plugin-icon-readmore {
+    width:128px;
+    height:128px;
+    background-image: url(https://ps.w.org/expand-maker/assets/icon-128x128.png?rev=1472559);
+    background-size:128px 128px;
+}
+
+#plugin-icon-scroll-top {
+    width:128px;
+    height:128px;
+    background-image: url(https://ps.w.org/scroll-to-top-builder/assets/icon-128x128.png?rev=1696507);
+    background-size:128px 128px;
+}
+
+#plugin-icon-random-numbers {
+    width:128px;
+    height:128px;
+    background-image: url(https://ps.w.org/random-numbers-builder/assets/icon-128x128.png?rev=2262718);
+    background-size:128px 128px;
+}
+
+.plugin-action-buttons {
+    clear: right;
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+#ydn-plugins-wrapper .action-links {
+    top: -2px !important;
+}
+
+/*more plugins section*/
+.ydn-accordion-content label, .sub-options-wrapper label {
+    padding-left: 15px;
+    font-weight: 400 !important;
+}
+
+/*Image type custom css start*/
+.ydn-show-image-container {
+    width: 222px;
+    height: 127px;
+    background-color: #F8F8F8;
+    margin: 14px auto;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.ydn-no-image {
+    display: block;
+    font: 13px Arial;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 56px;
+}
+
+.ydn-image-uploader-wrapper {
+    text-align: center;
+}
+
+.ydn-picture-h {
+    text-align: center;
+}
+/*Image type custom css start*/
+#edit-slug-box, .edit-post-status, .edit-visibility, .edit-timestamp {
+    display: none;
+}
+.ydn-support-button-red {
+    border: 2px solid #e74c3c !important;
+    color: #e74c3c !important;
+    border-radius: 5px;
+    cursor: pointer !important;
+    padding: 5px 25px 5px 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+    outline: 0;
+    transition: background-color .2s ease-out;
+    text-decoration: none;
+    margin: 5px auto;
+}
+
+.ydn-pro-options-restric {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 99%;
+    height: 100%;
+    top: 0;
+    margin: 0px -8px;
+}
+
+.ydn-conditions-free-section-wrapper label, .ydn-conditions-pro-button {
+    position: relative;
+    z-index: 99990 !important;
+}
+
+.ydn-condition-delete {
+    margin-left: 5px;
+    display: none !important;
+}
+
+.ydn-condition-add {
+    display: none !important;
+}
+
+.ydn-condion-wrapper:not(:only-child) .ydn-condition-delete {
+    display: inline-block !important;
+}
+
+.ydn-condion-wrapper:nth-last-child .ydn-condition-add {
+    display: inline-block !important;
+}
+
+.ydn-condion-wrapper:last-child .ydn-condition-add {
+    display: inline-block !important;
+}
+
+.ydn-add-new-hr {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid #DEDEDE;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.ydn-multiChoice-label {
+    padding-left: 40px !important;
+}
